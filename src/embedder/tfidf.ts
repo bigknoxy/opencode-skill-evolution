@@ -24,6 +24,10 @@ export class TfIdfEmbedder implements Embedder {
 
   async embed(text: string): Promise<number[]> {
     const tokens = this.tokenize(text)
+    if (tokens.length === 0) {
+      return []
+    }
+
     const tf = this.termFreq(tokens)
 
     this.documentCount++
@@ -36,7 +40,7 @@ export class TfIdfEmbedder implements Embedder {
     for (const [term, freq] of tf) {
       const idx = this.vocab.get(term) ?? this.vocab.size
       this.vocab.set(term, idx)
-      const idfVal = Math.log(this.documentCount / (this.idf.get(term) || 1))
+      const idfVal = Math.log((this.documentCount + 1) / (this.idf.get(term)! + 1)) + 1
       vec[idx] = freq * idfVal
     }
 

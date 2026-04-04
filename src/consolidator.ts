@@ -1,5 +1,6 @@
 import { Learning, TelemetryEntry } from './types'
-import { readFile, writeFile, appendFile, existsSync } from 'fs'
+import { readFile, writeFile, appendFile } from 'fs/promises'
+import { existsSync } from 'fs'
 import { getEmbedder } from './embedder'
 import { getDataPath } from './utils'
 

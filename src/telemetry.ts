@@ -1,4 +1,5 @@
-import { appendFile, readFile, writeFile, existsSync } from 'fs'
+import { appendFile, readFile, writeFile } from 'fs/promises'
+import { existsSync } from 'fs'
 import { TelemetryEntry, SkillMetrics } from './types'
 import { getDataPath } from './utils'
 
