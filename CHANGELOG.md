@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.1](https://github.com/bigknoxy/opencode-skill-evolution/compare/v1.0.0...v1.0.1) (2026-04-04)
+
+
+### Bug Fixes
+
+* add workflow_dispatch to publish workflow ([622d424](https://github.com/bigknoxy/opencode-skill-evolution/commit/622d4246d100906cbbceed7f23054a2a99c11914))
+* add workflow_dispatch to publish workflow ([88bf619](https://github.com/bigknoxy/opencode-skill-evolution/commit/88bf619fd6a685638c5e3859859315c7c7818026))
+* match exa-cli publish workflow pattern ([b8c3b07](https://github.com/bigknoxy/opencode-skill-evolution/commit/b8c3b07ed2e543935926957f7b1598191f441582))
+* trigger publish on release published event ([faa284a](https://github.com/bigknoxy/opencode-skill-evolution/commit/faa284ab0f87e47f477f36009c770cd19af4cc90))
+* trigger publish on release published event ([0734737](https://github.com/bigknoxy/opencode-skill-evolution/commit/07347371d90f7dc015591729b804c66d9f4d2ee8))
+* use setup-node for npm auth in publish workflow ([1413222](https://github.com/bigknoxy/opencode-skill-evolution/commit/1413222b6f4340c1cd53fcc02a4114d763c6c924))
+* use setup-node for npm auth in publish workflow ([473a0eb](https://github.com/bigknoxy/opencode-skill-evolution/commit/473a0eb231b42b07b2728b4cc79bfab2554b7980))
+
 ## 1.0.0 (2026-04-04)
 
 
