@@ -1,6 +1,6 @@
 {
   "name": "opencode-skill-evolution",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenCode plugin that learns from skill usage and suggests relevant skills automatically",
   "type": "module",
   "main": "./dist/index.js",
