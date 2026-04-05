@@ -5,8 +5,12 @@ import { extractPatterns, saveLearning, pruneStaleLearnings } from './consolidat
 import { loadConfig } from './config'
 import { generateId, extractFiles } from './utils'
 
+const VERSION = '1.0.1'
+
 const SkillEvolutionPlugin: Plugin = async (ctx: PluginInput) => {
   const { client } = ctx
+
+  client.app.log(`[skill-evolution] Plugin loaded v${VERSION}`)
 
   return {
     'session.start': async (input: { projectSlug?: string; task?: string }) => {
