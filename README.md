@@ -22,13 +22,38 @@ OpenCode has dozens of skills (`/browse`, `/qa`, `/ship`, etc.), but remembering
 
 ### Install
 
-Add to your `opencode.json`:
+**Recommended: Use the OpenCode CLI**
+
+```bash
+opencode plugin opencode-skill-evolution@latest --global
+```
+
+This command:
+1. Installs the plugin to `~/.cache/opencode/node_modules/`
+2. Updates your `opencode.json` automatically
+3. Works immediately on next OpenCode restart
+
+**Alternative: Manual config edit**
+
+Add to `~/.config/opencode/opencode.json`:
 
 ```json
 {
   "plugin": ["opencode-skill-evolution@latest"]
 }
 ```
+
+Then **restart OpenCode completely** (not just a new session - kill and restart the server).
+
+### Verify Installation
+
+When you start a new OpenCode session, you should see:
+
+```
+[skill-evolution] Plugin loaded v1.0.1
+```
+
+If you don't see this message, the plugin isn't loaded. Run `opencode plugin opencode-skill-evolution@latest --global` to fix.
 
 **That's it!** The plugin works out of the box with zero configuration.
 
