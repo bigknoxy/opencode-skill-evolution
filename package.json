@@ -49,14 +49,20 @@
     "prepublishOnly": "bun run build"
   },
   "dependencies": {
-    "@opencode-ai/plugin": "^1.0.0",
-    "@xenova/transformers": "^2.17.0",
+    "@opencode-ai/plugin": "^1.18.30",
+    "@xenova/transformers": "^2.17.2",
     "glob": "^13.0.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.0",
-    "@commitlint/config-conventional": "^19.0.0",
-    "@types/bun": "latest",
-    "typescript": "^5.7.0"
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "@types/bun": "^1.4.2",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "brace-expansion": "5.0.9",
+    "js-yaml": "4.3.2",
+    "sharp": ">=0.35.0",
+    "protobufjs": ">=7.6.1"
   }
 }
